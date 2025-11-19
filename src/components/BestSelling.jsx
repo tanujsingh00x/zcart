@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar, FaRegStar, FaShoppingCart, FaHeart } from "react-icons/fa";
+import { AiFillHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import { useStore } from "../context/StoreContext";
 import { useState, useEffect } from "react";
 
@@ -89,23 +90,24 @@ const BestSelling = () => {
     <>
       {/* Popup for Wishlist */}
       {showPopup && (
-        <div className="fixed top-10 right-5 bg-pink-500 text-white px-5 py-2 rounded-full shadow-md animate-bounce z-50">
-          💖 Added to Wishlist!
+        <div className=" flex gap-3 fixed top-10 right-5 bg-pink-500 text-white px-3 py-1 rounded-full shadow-md animate-bounce z-50">
+          <AiFillHeart size={30} /> Added to Wishlist!
         </div>
       )}
 
       {/* Popup for Cart */}
       {showPopup2 && (
-        <div className="fixed top-10 right-5 bg-green-500 text-white px-5 py-2 rounded-full shadow-md animate-bounce z-50">
-          🛒 Added to Cart!
+        <div className="flex gap-3 fixed top-10 right-5 bg-green-500 text-white px-3 py-1 rounded-full shadow-md animate-bounce z-50">
+          <AiOutlineShoppingCart size={30} />
+          Added to Cart!
         </div>
       )}
-      <section className="py-16 bg-white mt-20">
+      <section className="py-10 bg-white mt-15">
         <div className="max-w-7xl mx-auto px-6 md:px-10 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
             Best Selling
           </h2>
-          <div className="w-26 h-0.5 bg-green-500 ml-20 lg:ml-135 lg:w-30 mb-6"></div>
+          <div className="w-26 h-1 bg-green-500 ml-27 lg:ml-135 lg:w-30 mb-6"></div>
           <div className="flex justify-center items-center gap-2 mb-12 text-gray-500 text-sm">
             <p>Showing 6 of All products</p>
             <a

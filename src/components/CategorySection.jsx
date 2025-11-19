@@ -5,10 +5,10 @@ const CategorySection = () => {
 
   return (
     <>
-      <h1 className="text-5xl font-semibold text-center mt-8" id="category">
+      <h1 className="text-5xl font-semibold text-center mt-10" id="category">
         Category
       </h1>
-      <div className="w-35 h-1 bg-green-500 ml-30 mt-0.5 lg:ml-144"></div>
+      <div className="w-35 h-1 bg-green-500 ml-30 lg:ml-144"></div>
       <div className="flex flex-col items-center mt-18 lg:flex-col">
         <div className="cursor-pointer flex flex-col gap-12 lg:flex-row">
           <div className="relative w-70 h-80 bg-black/70 rounded-3xl flex items-center p-10 overflow-hidden">

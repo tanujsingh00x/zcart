@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
-        <div className="pb-0 lg:col-span-2 bg-green-200 rounded-3xl p-8 md:pb-0  relative flex flex-col lg:flex-row items-center justify-between overflow-hidden h-auto min-h-[32rem]">
+        <div className="pb-0 lg:col-span-2 bg-green-200 rounded-3xl p-8 md:pb-0  relative flex flex-col lg:flex-row items-center justify-between overflow-hidden h-auto min-h-128">
           <div className="max-w-xl z-10">
             <div className="inline-flex items-center bg-green-500 text-white px-4 py-1.5 rounded-full text-sm mb-4">
               <span className="bg-green-700 text-sm font-semibold px-2 py-0.5 rounded-full mr-2">
@@ -43,14 +43,14 @@ export default function HeroSection() {
 
         <div className="flex flex-col space-y-6">
           {/* Card 1 */}
-          <div className="bg-orange-200 w-full h-[15rem] rounded-3xl p-6 flex items-center justify-between">
+          <div className="bg-orange-200 w-full h-60 rounded-3xl p-6 flex items-center justify-between">
             <div>
               <h3 className="text-2xl font-semibold text-gray-800 leading-tight">
                 Best <br /> <span className="text-gray-600">products</span>
               </h3>
               <a
                 onClick={() => navigate("/headphones")}
-                className="cursor-pointer text-sm text-gray-600 mt-4 inline-flex items-center hover:underline"
+                className="cursor-pointer text-sm text-gray-600 mt-4 inline-flex items-center underline"
               >
                 View more &rarr;
               </a>
@@ -63,14 +63,14 @@ export default function HeroSection() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-blue-200 w-full h-[15rem] rounded-3xl p-6 flex items-center justify-between">
+          <div className="bg-blue-200 w-full h-60 rounded-3xl p-6 flex items-center justify-between">
             <div>
               <h3 className="text-2xl font-semibold text-gray-800 leading-tight">
                 20% <br /> <span className="text-gray-600">discounts</span>
               </h3>
               <a
                 onClick={() => navigate("/watches")}
-                className="cursor-pointer text-sm text-gray-600 mt-4 inline-flex items-center hover:underline"
+                className="cursor-pointer text-sm text-gray-600 mt-4 inline-flex items-center underline"
               >
                 View more &rarr;
               </a>

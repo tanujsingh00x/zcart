@@ -165,9 +165,9 @@ export default function Navbar() {
             <input
               type="text"
               placeholder="Search..."
-              className="w-full py-1 px-2 rounded-full bg-gray-300 text-sm focus:outline-none"
+              className="w-full p-2 rounded-full bg-gray-300 text-sm focus:outline-none"
             />
-            <button className="w-7 text-black bg-gray-400 p-1 rounded-full">
+            <button className="w-10 text-black bg-gray-400 p-2 rounded-full">
               <MagnifyingGlassIcon />
             </button>
           </div>

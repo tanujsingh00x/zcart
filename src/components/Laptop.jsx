@@ -37,26 +37,27 @@ const Laptops = () => {
     <>
       {/* Popup for Wishlist */}
       {showPopup && (
-        <div className="fixed top-10 right-5 bg-pink-500 text-white px-5 py-2 rounded-full shadow-md animate-bounce z-50">
-          💖 Added to Wishlist!
+        <div className=" flex gap-3 fixed top-10 right-5 bg-pink-500 text-white px-3 py-1 rounded-full shadow-md animate-bounce z-50">
+          <AiFillHeart size={30} /> Added to Wishlist!
         </div>
       )}
 
       {/* Popup for Cart */}
       {showPopup2 && (
-        <div className="fixed top-10 right-5 bg-green-500 text-white px-5 py-2 rounded-full shadow-md animate-bounce z-50">
-          🛒 Added to Cart!
+        <div className="flex gap-3 fixed top-10 right-5 bg-green-500 text-white px-3 py-1 rounded-full shadow-md animate-bounce z-50">
+          <AiOutlineShoppingCart size={30} />
+          Added to Cart!
         </div>
       )}
       <h1 className="lg:text-5xl text-3xl font-semibold text-center mt-8">
         Laptops
       </h1>
-      <div className="w-15 h-1 bg-green-500 ml-30 mt-0.5 lg:ml-145 mb-10 lg:w-25"></div>
+      <div className="w-23 h-1 bg-green-500 ml-37 lg:ml-145 mb-10 lg:w-36"></div>
       <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-15">
         {laptops.map((laptop) => (
           <div
             key={laptop.id}
-            className="h-100 w-75 p-7 bg-gray-300 border rounded-3xl shadow-sm hover:shadow-md transition duration-300 relative"
+            className="h-100 w-75 p-7 ml-5 md:ml-0 bg-gray-300 border rounded-3xl shadow-sm hover:shadow-md transition duration-300 relative"
           >
             <img
               src={`/l${laptop.id}.png`}

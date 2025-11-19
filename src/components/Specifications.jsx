@@ -4,12 +4,12 @@ import { LuClock3 } from "react-icons/lu";
 
 const Specifications = () => {
   return (
-    <section className="py-16 bg-white mt-20" id="services">
+    <section className="py-10 bg-white mt-15" id="services">
       <div className="max-w-6xl mx-auto text-center px-4">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
           Our Specifications
         </h2>
-        <div className="w-52 h-0.5 bg-purple-500 ml-10 lg:ml-114 mb-7"></div>
+        <div className="w-45 h-1 bg-purple-500 ml-22 lg:ml-115 md:w-55 mb-7"></div>
         <p className="text-gray-500 mb-12">
           We offer top-tier service and convenience to ensure your shopping
           experience is smooth, secure and completely hassle-free.
